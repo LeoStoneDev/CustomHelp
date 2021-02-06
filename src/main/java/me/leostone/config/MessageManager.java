@@ -9,11 +9,12 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Objects;
 import java.util.logging.Level;
 
 public class MessageManager {
 
-    private CustomHelp plugin;
+    private final CustomHelp plugin;
     private FileConfiguration messageConfig = null;
     private File configFile = null;
 
@@ -55,8 +56,11 @@ public class MessageManager {
             plugin.getLogger().log(Level.WARNING, "Couldn't save config to " + this.configFile, e);
         }
     }
+
     public String getMessage(String path) {
-        return ChatColor.translateAlternateColorCodes('&', this.getConfig().getString(path)) ;
+        return ChatColor.translateAlternateColorCodes('&'
+                ,Objects.requireNonNull(this.getConfig().getString(path))
+                .replace("{prefix}", Objects.requireNonNull(this.getConfig().getString("prefix"))));
     }
 
     public void saveDefaultConfig() {

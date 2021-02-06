@@ -1,6 +1,7 @@
 package me.leostone.config;
 
 import me.leostone.CustomHelp;
+import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
@@ -8,6 +9,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Objects;
 import java.util.logging.Level;
 
 public class DataManager {
@@ -53,6 +55,11 @@ public class DataManager {
         } catch (IOException e) {
             plugin.getLogger().log(Level.WARNING, "Couldn't save config to " + this.configFile, e);
         }
+    }
+
+    public String getMessage(String path) {
+        return ChatColor.translateAlternateColorCodes('&'
+                ,Objects.requireNonNull(this.getConfig().getString(path))) ;
     }
 
     public void saveDefaultConfig() {

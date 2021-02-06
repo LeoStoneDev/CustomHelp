@@ -2,7 +2,6 @@ me\leostone\commands\subcommands\DeleteCommand.class
 me\leostone\commands\subcommands\EditCommand.class
 me\leostone\config\DataManager.class
 me\leostone\commands\SubCommand.class
-me\leostone\commands\subcommands\ReloadCommand.class
 me\leostone\commands\CommandManager.class
 me\leostone\commands\subcommands\CreateCommand.class
 me\leostone\CustomHelp.class

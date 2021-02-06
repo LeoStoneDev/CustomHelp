@@ -1,1 +1,29 @@
-InvalidArguments: '&4Invalid Arguments!'
+# {prefix} replaces the value down below
+prefix: '&bCustomHelp » '
+
+
+# Commands & Usage
+Create: '{prefix}&aSuccessfully created the message.'
+CreateCommandUsage: '{prefix}&4Correct Usage: /help create <name> <message>'
+MessageAlreadyCreated: '{prefix}&4You already created this message!'
+
+Delete: '{prefix}&aSuccessfully deleted the message.'
+DeleteCommandUsage: '{prefix}&4Correct Usage: /help delete <name>'
+
+Edit: '{prefix}&aSuccessfully edited the message.'
+EditCommandUsage: '{prefix}&4Correct Usage: /help edit <name> <message>'
+
+UnknownMessage: '{prefix}&cCannot find a message called: '
+Name: '&aName: &r'
+Message: '&aMessage: &r'
+
+
+#Help Messages
+Help:
+  - '&e&l==========================='
+  - '&a/help create <name> <message> - create the message'
+  - '&a/help delete <name> - delete the message'
+  - '&a/help edit <name> - edit the message'
+  - '&a/help <name> - show the messages'
+  - '&a/help - show this messages'
+  - '&e&l==========================='
