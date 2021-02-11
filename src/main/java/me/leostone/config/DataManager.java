@@ -14,14 +14,11 @@ import java.util.logging.Level;
 
 public class DataManager {
 
-    private CustomHelp plugin;
+    private final CustomHelp plugin;
     private FileConfiguration dataConfig = null;
     private File configFile = null;
 
     public DataManager(CustomHelp plugin) {
-        if (!plugin.getDataFolder().exists()) {
-            plugin.getDataFolder().mkdir();
-        }
         this.plugin = plugin;
         saveDefaultConfig();
     }

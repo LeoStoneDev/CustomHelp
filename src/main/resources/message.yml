@@ -1,8 +1,7 @@
-# {prefix} replaces the value down below
 prefix: '&bCustomHelp » '
 
 
-# Commands & Usage
+# Commands & Usages
 Create: '{prefix}&aSuccessfully created the message.'
 CreateCommandUsage: '{prefix}&4Correct Usage: /help create <name> <message>'
 MessageAlreadyCreated: '{prefix}&4You already created this message!'
@@ -18,12 +17,24 @@ Name: '&aName: &r'
 Message: '&aMessage: &r'
 
 
-#Help Messages
+#Display Usages
 Help:
   - '&e&l==========================='
-  - '&a/help create <name> <message> - create the message'
-  - '&a/help delete <name> - delete the message'
-  - '&a/help edit <name> - edit the message'
-  - '&a/help <name> - show the messages'
-  - '&a/help - show this messages'
+  - '&a/help create <name> <messages> - Creates messages with the provided name.'
+  - '&a/help delete <name> - Deletes the messages with the provided name.'
+  - '&a/help edit <name> <line> <messages> - Edits the messages with the provided name and lines.'
+  - '&a/help list - Lists all the messages.'
+  - '&a/help <name> - Show the messages with the provided name.'
+  - '&a/help ? - Displays all the commands'
+  - '&a/help - Show the info.'
+  - '&e&l==========================='
+
+
+#Plugin Info
+Info:
+  - '&e&l==========================='
+  - '&aPlugin Version: 1.0'
+  - '&aPlugin Author: LeoStone'
+  - '&aContact Me(Discord): LeoStone#0201'
+  - '&aTry /help ? to display all the commands.'
   - '&e&l==========================='

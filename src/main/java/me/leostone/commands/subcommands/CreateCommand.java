@@ -9,12 +9,10 @@ import org.bukkit.command.CommandSender;
 
 public class CreateCommand extends SubCommand {
 
-    private DataManager data;
-    private CustomHelp plugin;
-    private MessageManager message;
+    private final DataManager data;
+    private final MessageManager message;
 
     public CreateCommand(CustomHelp plugin) {
-        this.plugin = plugin;
         this.data = new DataManager(plugin);
         this.message = new MessageManager(plugin);
     }

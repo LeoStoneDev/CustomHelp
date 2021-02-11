@@ -1,8 +1,0 @@
-name: CustomHelp
-version: 1.0
-main: me.leostone.CustomHelp
-api-version: 1.16
-
-commands:
-  help:
-

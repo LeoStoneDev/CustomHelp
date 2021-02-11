@@ -1,5 +1,5 @@
 name: CustomHelp
-version: ${project.version}
+version: 1.0
 main: me.leostone.CustomHelp
 api-version: 1.16
 
